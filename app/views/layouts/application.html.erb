@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Outfly</title>
+  <title>Outfly, Personal Fly-Fishing Journal</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+
+<div class="container">
+
+	<div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container" style="width: auto;">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Outf.ly</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+                      </ul>
+          <ul class="nav pull-right">
+            <li><a href="#">Sign Up</a></li>
+            <li class="divider-vertical"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log In <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">& Post a Journal Entry</a></li>
+                <li><a href="#">& Post a Photo</a></li>
+                <li><a href="#">& Read your Journal</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Search your Journal</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div>
+    </div><!-- /navbar-inner -->
+  </div>
+
+
 
 <%= yield %>
 
-</body>
+</div>
 </html>
